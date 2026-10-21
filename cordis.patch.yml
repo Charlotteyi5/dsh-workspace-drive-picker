@@ -1,0 +1,5 @@
+# Inserts the drive-picker plugin into the profile tree.
+# The row name must equal the package name so the Loader can resolve it.
+- insert:
+    - id: workspace-drive-picker
+      name: dsh-workspace-drive-picker
