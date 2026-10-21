@@ -1,0 +1,48 @@
+{
+  "name": "dsh-workspace-drive-picker",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Drive-letter chips and a remembered start directory for the DeepSeek Harness \"add workspace\" picker · 给 DSH 的「添加工作区」加上盘符一键直达与上次目录记忆",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "workspace",
+    "directory-picker",
+    "windows",
+    "drive-letter"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-modules",
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-slots",
+        "@deepseek-ai/dsh-client-ui-primitives"
+      ]
+    }
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Charlotteyi5/dsh-workspace-drive-picker.git"
+  },
+  "license": "MIT"
+}
